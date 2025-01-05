@@ -15,7 +15,7 @@ export class StateService {
     return this.stateRepository.find();
   }
 
-  // Optionally, create or update state here
+  // Optionally,creating or updating state 
   async createState(name: string) {
     const state = new State();
     state.name = name;

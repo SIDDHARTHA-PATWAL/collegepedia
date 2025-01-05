@@ -9,7 +9,7 @@ export class CollegePlacementController {
   @Get(':collegeId')
   async getCollegePlacementData(@Param('collegeId') collegeId: number) {
     try {
-      // Ensure valid collegeId (can add more checks based on your requirements)
+      // Ensuring valid collegeId
       if (!collegeId || isNaN(collegeId)) {
         throw new Error('Invalid college ID');
       }
