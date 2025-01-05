@@ -32,7 +32,7 @@ import { AppService } from './app.service';
           rejectUnauthorized: false, 
         },
         entities: [College,State,City,CollegePlacement,CollegeWiseCourse],
-        synchronize: true, // or false in production
+        synchronize: false, // or false in production
       }),
     }),
     
